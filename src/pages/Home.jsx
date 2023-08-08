@@ -1,5 +1,6 @@
 import MainLayout from "../layouts/MainLayout";
 import NavLayout from "../layouts/NavLayout";
+import Footeryout from "../layouts/Footeryout"
 
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <div>
       <NavLayout />
       <MainLayout />
+      <Footeryout />
     </div>
   )
 }
