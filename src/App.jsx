@@ -1,14 +1,19 @@
-import Home from "./pages/Home"
-import MainLayout from "./layouts/MainLayout"
+import { useState } from 'react'
+import './App.css'
+import Home from './pages/Home'
+
+
 
 function App() {
+  const [count, setCount] = useState(0)
 
-    return (
-      <MainLayout>
+  return (
+    <>
+      <div className="md:flex md:flex-col md:items-center">
         <Home />
-        {/* POR AHORA ESTA LLAMANDO A LA UNICA INTERFAZ QUE TENEMOS DEFINIDA */}
-      </MainLayout>
-    )
+      </div>
+    </>
+  )
 }
 
 export default App
