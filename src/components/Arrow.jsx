@@ -7,9 +7,9 @@ export default function Arrow({ direction, onClick }) {
       fill="none"
       viewBox="0 0 24 24"
       strokeWidth={1.5}
-      stroke="currentColor"
-      className="w-6 h-6"
-      onClick={onClick} // Agregamos el manejador onClick
+      stroke="#333" 
+      className="w-20 h-20" 
+      onClick={onClick} 
     >
       <path strokeLinecap="round" strokeLinejoin="round" d={direction} />
     </svg>

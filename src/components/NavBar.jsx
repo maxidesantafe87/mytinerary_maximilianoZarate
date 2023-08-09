@@ -2,7 +2,8 @@ import React from 'react';
 
 export default function Navbar() {
   return (
-    <nav className="flex w-4/12 items-center space-x-10">
+    <nav className="flex w-4/12 items-center space-x-10 bg-pink-200 ">
+            <h2 className="font-bold text-3xl">My Tinerary</h2>
       <div className="flex space-x-2 space-x-10">
         <a className="font-bold text-1xl" href="">Home</a>
         <a className="font-bold text-1xl" href="">Cities</a>
@@ -12,5 +13,6 @@ export default function Navbar() {
         <span>Login&nbsp;</span>
       </button>
     </nav>
+    
   );
 }
