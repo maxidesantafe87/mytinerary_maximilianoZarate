@@ -40,13 +40,24 @@ export default function Carousel() {
     <div className="carousel flex justify-center items-center">
       <Arrow direction="M15.75 19.5L8.25 12l7.5-7.5" onClick={handlePrevArrow} />
 
-      <div className="container flex flex-wrap gap-2 justify-center h-full">
-        {data.slice(startIndex, startIndex + 4).map((each, index) => (
-          <Card key={index} src={each.photo} city={each.city} />
-        ))}
-      </div>
+ 
+
+
+<div className="container flex flex-wrap gap-2 justify-center h-full">
+<div className="container flex flex-wrap gap-2 justify-center h-1/2">
+  {data.slice(startIndex, startIndex + 2).map((each, index) => (
+    <Card key={index} src={each.photo} city={each.city} />
+  ))}
+</div>
+<div className="container flex flex-wrap gap-2 justify-center h-1/2">
+  {data.slice(startIndex + 2, startIndex + 4).map((each, index) => (
+    <Card key={index} src={each.photo} city={each.city} />
+  ))}
+</div>
+</div>
 
       <Arrow direction="M8.25 4.5l7.5 7.5-7.5 7.5" onClick={handleNextArrow} />
     </div>
   );
 }
+

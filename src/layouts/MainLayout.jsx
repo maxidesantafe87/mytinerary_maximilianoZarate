@@ -6,7 +6,11 @@ export default function MainLayout() {
   return (
     <main className="flex m-40 h-60 justify-between">
       <Bodytext />
-      <Carousel />
+   
+        <Carousel />
+     
     </main>
   )
 }
+
+

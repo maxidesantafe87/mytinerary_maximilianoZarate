@@ -1,9 +1,11 @@
+
+
 import React from 'react';
 
 export default function Footer() {
   return (
-    <footer className="flex items-center justify-between h-[49px] bg-pink-200 px-4">
-      <div className="flex items-center space-x-4">
+    <footer className="bg-pink-200 p-4 sticky bottom-0">
+     <div className="flex items-center space-x-4">
         {/* Iconos de redes sociales */}
         <a href="#"><img src="facebook-icon.png" alt="Facebook" className="w-6 h-6" /></a>
         <a href="#"><img src="twitter-icon.png" alt="Twitter" className="w-6 h-6" /></a>
