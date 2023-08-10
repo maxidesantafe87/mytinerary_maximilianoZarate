@@ -5,8 +5,12 @@ module.exports = {
         './src/**/*.{js,jsx,ts,tsx}'
     ],
     theme: {
-        extend: {}
+        extend: {
+            fontFamily: {
+                'birdsofparadise': ['Birds of Paradise', 'sans-serif'],
+            },
+        },
     },
     variants: {},
     plugins: []
-}
+};
